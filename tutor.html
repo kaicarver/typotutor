@@ -16,18 +16,26 @@
       var player = {};
       $(function () {
 	var time = 0;
-	var interval = 300;
+	var interval = 150;
 	setTimeout("playKey('C',true)", time);
 	time += interval;
 	setTimeout("playKey('D',true)", time);
 	time += interval;
-	setTimeout("playKey('E',true)", time);
+	setTimeout("playKey('C',true)", time);
+	time += interval;
+	setTimeout("playKey('C',true)", time);
 	time += interval;
 	setTimeout("playKey('C',false)", time);
 	time += interval;
 	setTimeout("playKey('D',false)", time);
 	time += interval;
-	setTimeout("playKey('E',false)", time);
+	setTimeout("playKey('C',true)", time);
+	time += interval;
+	setTimeout("playKey('D',true)", time);
+	time += interval;
+	setTimeout("playKey('C',true)", time);
+	time += interval;
+	setTimeout("playKey('C',true)", time);
 	time += interval;
       });
       $('body').keypress(function () {
